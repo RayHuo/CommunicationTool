@@ -1,0 +1,131 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:136), pid=4676, tid=2204
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (7.0_45-b18) (build )
+# Java VM: Java HotSpot(TM) Client VM (24.45-b08 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0051c000):  JavaThread "Unknown thread" [_thread_in_vm, id=2204, stack(0x00d60000,0x00db0000)]
+
+Stack: [0x00d60000,0x00db0000],  sp=0x00daf30c,  free space=316k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x18df51]
+V  [jvm.dll+0x187cc6]
+V  [jvm.dll+0x3586a]
+V  [jvm.dll+0x358f6]
+V  [jvm.dll+0x4400d]
+V  [jvm.dll+0x442be]
+V  [jvm.dll+0x9263a]
+V  [jvm.dll+0x929eb]
+V  [jvm.dll+0x13daf1]
+V  [jvm.dll+0x1605fc]
+V  [jvm.dll+0xc8ebf]
+C  [javaw.exe+0x13ce]
+C  [javaw.exe+0x1e40]
+C  [javaw.exe+0xa5b1]
+C  [javaw.exe+0xa63b]
+C  [kernel32.dll+0x4ed6c]
+C  [ntdll.dll+0x6399b]
+C  [ntdll.dll+0x6396e]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0051c000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=2204, stack(0x00d60000,0x00db0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.044 loading class 0x0054c540 done
+Event: 0.044 loading class 0x0054bfd0 done
+Event: 0.044 loading class 0x0054bfb0
+Event: 0.055 loading class 0x005532d8
+Event: 0.087 loading class 0x005532d8 done
+Event: 0.087 loading class 0x00553308
+Event: 0.087 loading class 0x00553308 done
+Event: 0.087 loading class 0x00553338
+Event: 0.088 loading class 0x00553338 done
+Event: 0.088 loading class 0x0054bfb0 done
+
+
+Dynamic libraries:
+0x00f50000 - 0x00f7f000 	D:\Program Files\Java\jdk1.7.0_45\bin\javaw.exe
+0x76fd0000 - 0x77111000 	C:\Windows\SYSTEM32\ntdll.dll
+0x76980000 - 0x76a54000 	C:\Windows\system32\kernel32.dll
+0x752f0000 - 0x7533b000 	C:\Windows\system32\KERNELBASE.dll
+0x767a0000 - 0x76840000 	C:\Windows\system32\ADVAPI32.dll
+0x76de0000 - 0x76e8c000 	C:\Windows\system32\msvcrt.dll
+0x75a50000 - 0x75a69000 	C:\Windows\SYSTEM32\sechost.dll
+0x768d0000 - 0x76972000 	C:\Windows\system32\RPCRT4.dll
+0x75800000 - 0x758c9000 	C:\Windows\system32\USER32.dll
+0x75b00000 - 0x75b4e000 	C:\Windows\system32\GDI32.dll
+0x755e0000 - 0x755ea000 	C:\Windows\system32\LPK.dll
+0x76c40000 - 0x76cdd000 	C:\Windows\system32\USP10.dll
+0x73b90000 - 0x73d2e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+0x76870000 - 0x768c7000 	C:\Windows\system32\SHLWAPI.dll
+0x755c0000 - 0x755df000 	C:\Windows\system32\IMM32.DLL
+0x75980000 - 0x75a4c000 	C:\Windows\system32\MSCTF.dll
+0x57840000 - 0x578ff000 	D:\Program Files\Java\jdk1.7.0_45\jre\bin\msvcr100.dll
+0x58f30000 - 0x592b0000 	D:\Program Files\Java\jdk1.7.0_45\jre\bin\client\jvm.dll
+0x6ff00000 - 0x6ff07000 	C:\Windows\system32\WSOCK32.dll
+0x75a70000 - 0x75aa5000 	C:\Windows\system32\WS2_32.dll
+0x758d0000 - 0x758d6000 	C:\Windows\system32\NSI.dll
+0x73020000 - 0x73052000 	C:\Windows\system32\WINMM.dll
+0x77120000 - 0x77125000 	C:\Windows\system32\PSAPI.DLL
+0x73450000 - 0x7345c000 	D:\Program Files\Java\jdk1.7.0_45\jre\bin\verify.dll
+0x723b0000 - 0x723d0000 	D:\Program Files\Java\jdk1.7.0_45\jre\bin\java.dll
+0x72390000 - 0x723a3000 	D:\Program Files\Java\jdk1.7.0_45\jre\bin\zip.dll
+0x704d0000 - 0x705bb000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:D:\Program Files\Android SDK\adt-bundle-windows-x86-20131030\adt-bundle-windows-x86-20131030\sdk\platforms\android-19\android.jar 
+java_command: com.ray.yolandaray.Server
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\Program Files\Java\jdk1.7.0_45
+CLASSPATH=.;D:\Program Files\Java\jdk1.7.0_45\lib\dt.jar;D:\Program Files\Java\jdk1.7.0_45\lib\tools.jar;D:\mysql-connector-java-5.1.18-bin.jar;
+PATH=D:/Program Files/Java/jdk1.7.0_45/bin/../jre/bin/client;D:/Program Files/Java/jdk1.7.0_45/bin/../jre/bin;D:/Program Files/Java/jdk1.7.0_45/bin/../jre/lib/i386;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\Program Files\Java\jdk1.7.0_45\bin;D:\Program Files\Java\jdk1.7.0_45\jre\bin;D:\Program Files\nodejs\;D:\Program Files\MySQL\MySQL Server 5.5\bin;D:\Program Files\CTEX\UserData\miktex\bin;D:\Program Files\CTEX\MiKTeX\miktex\bin;D:\Program Files\CTEX\CTeX\ctex\bin;D:\Program Files\CTEX\CTeX\cct\bin;D:\Program Files\CTEX\CTeX\ty\bin;D:\Program Files\CTEX\Ghostscript\gs9.05\bin;D:\Program Files\CTEX\GSview\gsview;D:\Program Files\CTEX\WinEdt;D:\Program Files\Calibre2\;C:\Users\Ray\AppData\Roaming\npm;D:\Program Files\Android SDK\adt-bundle-windows-x86-20131030\adt-bundle-windows-x86-20131030\eclipse;
+USERNAME=Ray
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 23 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7601 Service Pack 1
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 23 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, tsc
+
+Memory: 4k page, physical 2096404k(163908k free), swap 4192808k(1395060k free)
+
+vm_info: Java HotSpot(TM) Client VM (24.45-b08) for windows-x86 JRE (1.7.0_45-b18), built on Oct  8 2013 06:02:43 by "java_re" with unknown MS VC++:1600
+
+time: Sat May 02 22:21:13 2015
+elapsed time: 0 seconds
+
